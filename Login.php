@@ -19,7 +19,7 @@
             $password=$_POST['password'];
 
             $q1 = mysqli_query($con,"select * from register where email='$email' and password='$password'");
-            $row=mysqli_fetch_array($q1,MYSQLI_ASSOC);
+            // $row=mysqli_fetch_array($q1,MYSQLI_ASSOC);
             $count=mysqli_num_rows($q1);
             if($count==1){
                 echo "<font color='green'>successfully login user";
